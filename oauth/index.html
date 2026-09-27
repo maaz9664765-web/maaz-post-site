@@ -1,0 +1,16 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Maaz Post - connected</title>
+<style>body{background:#06070b;color:#eef0f5;font:16px/1.6 system-ui,sans-serif;display:grid;
+place-items:center;min-height:100vh;margin:0;padding:24px}
+.c{max-width:640px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);
+border-radius:18px;padding:28px}
+h1{font-size:20px;margin:0 0 8px}p{color:#9aa1b2;margin:0 0 16px}
+textarea{width:100%;height:110px;background:#0b0d13;color:#eef0f5;border:1px solid #2a3040;
+border-radius:10px;padding:12px;font:13px/1.5 Consolas,monospace}
+button{margin-top:12px;background:linear-gradient(120deg,#a78bfa,#6366f1);color:#fff;border:0;
+padding:11px 20px;border-radius:11px;font-weight:700;cursor:pointer;font-size:15px}</style></head>
+<body><div class="c"><h1>Bas ye poora text copy karo</h1>
+<p>Maaz Post dashboard me wapas jao aur isko <b>"paste code"</b> box me daal do.</p>
+<textarea id="u" readonly></textarea><button onclick="c()">Copy</button>
+<script>const t=document.getElementById('u');t.value=location.href;
+function c(){t.select();document.execCommand('copy');event.target.textContent='Copied';}
+</script></div></body></html>
